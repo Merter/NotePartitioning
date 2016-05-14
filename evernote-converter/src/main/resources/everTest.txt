@@ -1,0 +1,160 @@
+10.12.2013 - 0745
+* MBP'de Kindle kurdum ve ilgili kitaplari indirdim.
+* CtCI4 indirdim.
+* Careercup'tan kod kopyalayip Eclipse'te calistirdim.
+* Yeni Eclipse versiyonlarini indirmeye basladim.
+* Hem Java hem de C/C++
+
+11.12.2013 - 0615
+* String - StringBuffer - StringBuilder farkini inceledim.
+- String: immutable, degismedigi icin threadsafe
+- StringBuffer: mutable ve threadsafe... Yeni kopyalama gerekmedigi icin surekli yeni string uretilmiyor
+- StringBuilder: mutable ve not threadsafe... En performanslisi bu...
+
+11.12.2013 - 0745
+* grepcode.com adresinden kodlari da inceledim.
+* StringBuffer da StringBuilder da default 16 karakter ile basliyor veya 16 karakter ekliyor.
+* StringBuffer'da fonkisyonlar, dogal olarak, hep synchronized...
+* Bu sekilde threadsafe olabiliyor.
+* Char, String, Charset ve Unicode uzerine faydali bir makale:
+http://www.joelonsoftware.com/articles/Unicode.html
+* No string without encoding!
+
+12.12.2013 - 0745
+* Java'da I/O:
+- System.in kullaniliyor. Bu byte stream donuyor!
+- O nedenle, belirli bi charset kullanilarak, bu byte stream char stream'e donusturulmeli.
+- Bu isi yapan: InputStreamReader()
+- Tek tek byte'lari al, karaktere cevir olmasin, performans yuksek olsun istiyorsak BufferedReader() ile kullaniyoruz.
+InputStreamReader isr = new InputStreamReader(System.in);
+BufferedReader bf = new BufferedReader(isr);
+- Bir diger alternatif de Console() kullanmak.
+- Bunun guzelligi, password'ler ancak bununla duzgun okunabiliyor.
+* Ayrica template design pattern kullanimina baktim.
+- http://tutorials.jenkov.com/java-exception-handling/exception-handling-templates.html
+* Surekli surekli exception handling yapilan yerler icin cok guzel.
+* C kodu yazmak icin CDT'ye bakiyorum.
+* Tam beceremedim.
+
+13.12.2013 - 0615
+* 1. Chapter sorularina bakiyorum.
+* java.util.Arrays.sort() double-pivot quicksort kullaniyormus.
+
+13.12.2013 - 0815
+* Notlarimi koda dokuyorum.
+* 1.3 kodunu yazdim.
+* 4. edition'daki counting kodu dogru ama 5. editon'da eksik bence.
+* Deneyip bakayim.
+
+14.12.2013 - 2230
+* Careercup.com'da bir soru gormustum.
+* [0..N-1] araligindaki N adet sayidan N-1 tanesi veriliyor.
+* Hangisi eksiktir?
+* Buldugum cozumler:
+-
+* Gece yatarken olayi cozdum.
+* Gaussian toplama yapilacak.
+* Verilen N-1 sayi da toplanacak.
+* Fark, aranan sayidir.
+
+15.12.2013 - 2000
+* Narin ile sorulari tartisirken farkettim ki 5. edition'daki 1.3 kodu hatali degil.
+* En basta iki string'in uzunluklari kontrol edildigi icin, en son tum dizi sifirlanmis mi diye kontrol etmeye gerek yok.
+
+16.12.2013 - 0830
+* 1.4 uzerinde biraz dusundum.
+* 1.5'i, kitaptakinden farkli bir yolla cozdum.
+
+16.12.2013 - 1230
+* 1.6 calismasina basladim.
+* Normali yaptim.
+* In-place uzerine calisiyorum.
+* Combination lock gibi aslinda...
+* Bir tarafa dogru, diger byte'lardan bagimsiz kaydirabilirim.
+
+17.12.2013 - 0830
+* 1.6 in-place'e devam...
+* Shifting circular linked list...
+* O da tamam...
+* Kodlari yazip deniycem bir ara...
+* Bir de kitaptaki cozumlere bakayim tabi.
+* 1.7'ye basladim.
+* Bunu da yaptim.
+* Kodunu yazip kitaptaki cozumlere bakmak kaldi.
+
+18.12.2013 - 0800
+* Bolumun son sorusu olan 1.8 uzerine calismaya basladim.
+* Onu da yaptim.
+* Kodunu yazip kitaptaki cozumlere bakmak kaldi.
+
+19.12.2013 - 0700
+* Kodlari yaziyorum.
+* 1.6 normal OK.
+* 1.6 in-place sorunlu.
+
+20.12.2013 - 0730
+* 1.6 in-place duzelttim.
+* 1.7 kodunu yaziyorum.
+* 1.6, 1.7 ve 1.8'in cozumlerini inceledim.
+* 1.8 icin olan cozum cok cok guzel...
+* Ispatini da yaparsam daha iyi olur.
+
+23.12.2013 - 1715
+* 2. chapter'a basliyorum.
+* Runner technique...
+* Recursion...
+* Linked list genelde brute force kodlama gerektiriyor.
+* 2.1 cozumunu yazdim.
+* HashMap<> kullandim.
+* 2.1'in buffersiz cozumunu de yazdim.
+* Kodlayip deneyecegim.
+
+25.12.2013 - 1215
+* 2.2 cozumunu yaziyorum.
+* Easy version...
+* Ikinci verisyonu da yaziyorum.
+* Single pass dusunuyorum.
+* Recursive?
+* Bunda sorunlar var bence.
+* Tersten yazabiliyorum.
+
+26.12.2013 - 1215
+* 2.2 recursive ve diger cozume baktim.
+* Diger cozum iyiymis.
+* Bence recursive cozum sorunu.
+* Deneyip bakicam.
+* 2.3 icin ugrastim ama aklima bisi gelmedi.
+* Cok kolaymis... Cok utandim.
+* 2.4'e bakiyorum.
+* Onun icin bir kod yazdim.
+
+27.12.2013 - 1245
+* 2.5 easy mode icin kod yazdim.
+
+30.12.2013 - 1645
+* Kindle icin Algorithms kitabi aldim.
+
+31.12.2013 - 1930
+* Algorithms kitabini okumaya basladim.
+* Tum CS kitaplarini Kindle’a koydum.
+* Crack 4 de orada..
+
+01.01.2014 - 2330
+* Algorithms okumaya devam...
+* Bu dokumani Evernote'a tasiyorum.
+
+02.01.2014 - 2200
+* 2.5 hard ile ugrasiyorum.
+
+03.01.2014 - 0615
+* Algorithms kitabi okudum.
+* 2.5 hard kodunu hazirladim.
+* Yazip denemeliyim.
+
+03.01.2014 - 0900
+* 4th Ed. Kindleda oldugundan oradaki sorulara bakmaya basladim.
+* 2.5 corrupt linked list sorusu...
+
+03.01.2014 - 1245
+* Corrupt link icin, unique assumption ile iki kod hazirladim.
+
